@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+  }
+  
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width: 64px;
+    height: auto;
+    padding: 10px;
+}
+
+
+.scores{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 8px;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90px;
+
+}
+
+.points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(110, 110, 110, 0.705);
+
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+
+}
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+
+
+}
+
+.choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid rgba(110, 110, 110, 0.705);
+    background-color: antiquewhite;
+    width: 90px;
+    height: 140px;
+
+}
+
+.results{
+    width: 150px;
+    text-align: center;
+}
