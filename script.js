@@ -48,15 +48,17 @@ let results = (userInput) => {
         lblResults.textContent = ('Draw ' + "User choose : " + userInput + " Computer choose: " + computerInput);
     }
     else if ((userInput == "Rock" && computerInput == "Paper") || (userInput == "Scissors" && computerInput == "Rock") || (userInput == "Paper" && computerInput == "Scissors")) {
+        lblResults.textContent = 'User lose ' + "User choose : " + userInput + " Computer choose: " + computerInput;
         matchResults = validateScore(false);
-        if (!matchResults) { console.log(matchResults) } else { lblResults.textContent = 'User lose ' + "User choose : " + userInput + " Computer choose: " + computerInput; };
+        if (!matchResults) { console.log(matchResults) } /*else { lblResults.textContent = 'User lose ' + "User choose : " + userInput + " Computer choose: " + computerInput; }*/;
 
     }
     else if ((userInput == "Rock" && computerInput == "Scissors") || (userInput == "Paper" && computerInput == "Rock") || (userInput == "Scissors" && computerInput == "Paper")) {
+        lblResults.textContent = 'User wins ' + "User choose : " + userInput + " Computer choose: " + computerInput 
         matchResults = validateScore(true);
-        if (!matchResults) { console.log(matchResults) } else { lblResults.textContent = 'User wins ' + "User choose : " + userInput + " Computer choose: " + computerInput };
+        if (!matchResults) { console.log(matchResults) } /*else { */};
 
-    }
+    // }
     //alert(results());
 
 };
